@@ -1,4 +1,4 @@
-module github.com/liamg/furious
+module github.com/bihanikeshva/furious-moded
 
 go 1.12
 
