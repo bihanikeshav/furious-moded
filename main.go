@@ -1,6 +1,6 @@
 package main
 
-import "github.com/liamg/furious/cmd"
+import "github.com/bihanikeshav/furious-moded/cmd"
 
 func main() {
 	cmd.Execute()

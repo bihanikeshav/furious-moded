@@ -1,4 +1,4 @@
-module github.com/bihanikeshva/furious-moded
+module github.com/bihanikeshav/furious-moded
 
 go 1.12
 

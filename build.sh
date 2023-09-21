@@ -14,7 +14,7 @@ if [[ "$version" == "" ]]; then
 fi
 
 export GOPATH="/tmp/.gobuild"
-SRCDIR="${GOPATH}/src/github.com/liamg/furious"
+SRCDIR="${GOPATH}/src/github.com/bihanikeshav/furious-moded"
 
 [ -d ${GOPATH} ] && rm -rf ${GOPATH}
 mkdir -p ${GOPATH}/{src,pkg,bin}
@@ -23,7 +23,7 @@ cp -r . ${SRCDIR}
 (
     echo ${GOPATH}
     cd ${SRCDIR}
-    go build -ldflags "-X github.com/liamg/furious/version.Version=$version"
+    go build -ldflags "-X github.com/bihanikeshav/furious-moded/version.Version=$version"
 )
 cp ${SRCDIR}/furious ./furious
 rm -rf /tmp/.gobuild

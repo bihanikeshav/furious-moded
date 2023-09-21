@@ -12,7 +12,7 @@ test:
 
 .PHONY: install
 install: build
-	go install -ldflags "-X github.com/liamg/furious/version.Version=`git describe --tags`"
+	go install -ldflags "-X github.com/bihanikeshav/furious-moded/version.Version=`git describe --tags`"
 
 .PHONY: update-ports
 install-tools:

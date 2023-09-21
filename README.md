@@ -18,7 +18,7 @@ You'll need to install libpcap.
 Then just:
 
 ```
-go get -u github.com/liamg/furious
+go get -u github.com/bihanikeshav/furious-moded
 ```
 
 ## Options
