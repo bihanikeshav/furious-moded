@@ -156,11 +156,13 @@ func (s *DeviceScanner) OutputResult(result Result) {
 	// }
 
 	if result.MAC != "" {
-		fmt.Printf(
-			"\t%s %s\n",
-			pad("MAC:", 24),
-			result.MAC,
-		)
+		fmt.Print(result.Host.String(), " | ")
+		fmt.Println(result.MAC)
+		// fmt.Printf(
+		// 	"\t%s %s\n",
+		// 	pad("MAC:", 24),
+		// 	result.MAC,
+		// )
 	}
 
 	// if result.Manufacturer != "" {
