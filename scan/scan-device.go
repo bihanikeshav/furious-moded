@@ -133,27 +133,27 @@ func (s *DeviceScanner) Scan(ctx context.Context, ports []int) ([]Result, error)
 
 func (s *DeviceScanner) OutputResult(result Result) {
 
-	fmt.Printf("Scan results for host %s\n", result.Host.String())
+	// fmt.Printf("Scan results for host %s\n", result.Host.String())
 
-	status := "DOWN"
+	// status := "DOWN"
 
-	if result.IsHostUp() {
-		status = "UP"
-	}
+	// if result.IsHostUp() {
+	// 	status = "UP"
+	// }
 
-	fmt.Printf(
-		"\t%s %s\n",
-		pad("Status:", 24),
-		status,
-	)
+	// fmt.Printf(
+	// 	"\t%s %s\n",
+	// 	pad("Status:", 24),
+	// 	status,
+	// )
 
-	if result.IsHostUp() {
-		fmt.Printf(
-			"\t%s %s\n",
-			pad("Latency:", 24),
-			result.Latency.String(),
-		)
-	}
+	// if result.IsHostUp() {
+	// 	fmt.Printf(
+	// 		"\t%s %s\n",
+	// 		pad("Latency:", 24),
+	// 		result.Latency.String(),
+	// 	)
+	// }
 
 	if result.MAC != "" {
 		fmt.Printf(
@@ -163,21 +163,21 @@ func (s *DeviceScanner) OutputResult(result Result) {
 		)
 	}
 
-	if result.Manufacturer != "" {
-		fmt.Printf(
-			"\t%s %s\n",
-			pad("Manufacturer:", 24),
-			result.Manufacturer,
-		)
-	}
+	// if result.Manufacturer != "" {
+	// 	fmt.Printf(
+	// 		"\t%s %s\n",
+	// 		pad("Manufacturer:", 24),
+	// 		result.Manufacturer,
+	// 	)
+	// }
 
-	if result.Name != "" {
-		fmt.Printf(
-			"\t%s %s\n",
-			pad("Name:", 24),
-			result.Name,
-		)
-	}
+	// if result.Name != "" {
+	// 	fmt.Printf(
+	// 		"\t%s %s\n",
+	// 		pad("Name:", 24),
+	// 		result.Name,
+	// 	)
+	// }
 
-	fmt.Println("")
+	// fmt.Println("")
 }
